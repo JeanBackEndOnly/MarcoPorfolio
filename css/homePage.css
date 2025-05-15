@@ -1,0 +1,253 @@
+body{
+    background-color: #021526;
+    height: 100vh;
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    width: 100vw;
+    overflow-y: hidden;
+}
+.header{
+    position: fixed;
+    z-index: 4;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 10%;
+    background-color: #6EACDA;
+}
+.logo{
+    margin: 0;
+    width: 60%;
+    height: 100%;
+    font-size: 1rem;
+    transform: translateX(5rem);
+    color: #03346E;
+}
+.logo h1{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 100%;
+    font-weight: 900;
+}
+.navs{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+}
+.ul-class{
+    z-index: 1;
+    padding: 0;
+    display: flex;
+    width: 70%;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    list-style-type: none;
+}
+.ul-class li{
+    text-align: center;
+}
+.ul-class li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 17px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+.ul-class li a:hover{
+    color: #f0f0f0;
+    border-bottom: solid 2px #03346E;
+    font-weight: 500;
+}
+#home{
+    color: #f0f0f0;
+    border-bottom: solid 2px #03346E;
+}
+/* ------------------------Content------------------------- */
+.content{
+    display: flex;
+    width:100%;
+    height: 95%;
+    justify-content: space-between;
+    align-items: center;
+}
+.column{
+    margin-top: 25%;
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+ .image{
+    width: 40%;
+    height: 85%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+ }
+ .image img{
+    position: fixed;
+    transform: translate(-9rem);
+    width: 25rem;
+    height: 27em;
+    border-radius: 50%;
+    border: solid 2px #000;
+    background-color: #03346E;
+    box-shadow: 25px 0 20px 0 #000;
+ }
+.text-content{
+    z-index: 3;
+    width: 60%;
+    height: auto;
+    display: block;
+    align-content: center;
+    justify-items: start;
+    margin-left: 12%;
+}
+p, #name, h2, h4{
+    z-index: 3;
+    margin: 0;
+}
+h4{
+    font-size: 30px;
+}
+#name{
+    font-size: 50px;
+}
+h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+    border-bottom: solid 2px #03346E;
+    padding-bottom: 20px;
+    width: 35rem;
+}
+span{
+    color: #6EACDA;
+}
+#intro{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.three-a{
+    display: flex;
+    margin-left: 12%;
+    width: 19rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.fb-class img, .insta-class img, .github-class img, .gmail-class img, .contact-class img{
+    align-items: center;
+}
+.fb-class, .insta-class, .github-class, .gmail-class, .contact-class{
+    width: fit-content;
+    
+}
+.fb-class p, .insta-class p, #guthib-id, .gmail-class p, .contact-class p{
+    color: #6EACDA;
+    text-align: center;
+    display: none;
+}
+#fb img, #ins img, #gth img{
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+#fb img:hover, #ins img:hover, #gth img:hover{
+    transform: scale(1.2);
+}
+.contact-p{
+    height: 2.5rem;
+    width: fit-content;
+    margin: 0;
+    margin-left: 12%;
+}
+
+.contact-p p{
+    font-size: 23px;
+}
+
+/* ------------------------Footer------------------------- */
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #032a4d;
+}
+
+
+@media (max-width: 570px){
+    .header{
+        height: 5%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+    .logo{
+        position: fixed;
+        left: -4.5rem;
+        top: 0;
+        height: 5%;
+    }
+    .ul-class{
+        width: 60%;
+    }
+    .ul-class li a{
+        font-size: 12px;
+    }
+    .logo h1{
+        font-size: 20px;
+    }
+    .navs{
+        display: flex;
+        align-items: end;
+        justify-content: end;
+    }
+    .image img {
+        width: 150px;
+        height: auto;
+        top: 4rem;
+        left: 20rem;
+    }
+    p, #name, h2, h4{
+        font-size: 20px;
+        width: 90vw;
+    }
+    #contact{
+        font-size: 15px;
+    }
+    .text-content{
+        transform: translate(-1rem, 7rem);
+    }
+    .contact-p, .three-a{
+        transform: translate(-1rem, 7rem);
+    }
+    .footer p{
+        font-size: 12px;
+        text-align: center;
+        width: 50%;
+    }
+    #fb img, #ins img, #gth img{
+        width: 30px;
+        height: auto;
+        margin: 0 5px;
+    }
+    .contact-p{
+        height: fit-content;
+        margin-bottom: 10px;
+    }
+    .three-a{
+        width: fit-content;
+    }
+}

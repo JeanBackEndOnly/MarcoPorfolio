@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <script src="../about.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <h1>MARCO JEAN</h1>
+        </div>
+        <div class="navs">
+             <ul class="ul-class">
+                <li><a href="../index.html" id="home">Home</a></li>
+                <li><a href="about.html" id="about">About</a></li>
+                <li><a href="services.html" id="services">Services</a></li>
+                <li><a href="rizal.html" id="rizal">Rizal</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <div class="profile">
+            <img src="../images/me.jpeg" alt="my profile">
+        </div>
+        <div class="about-me">
+            <h1 id="title">ABOUT ME</h1>
+            <h2 id="sub">My Journey as a Full-Stack Developer</h2>
+            <p id="prgp">When I started coding, my focus was solely on backend development with PHP. I loved <br>
+                building the logic behind web applications, focusing on database management and <br>
+                server-side programming. However, during my academic journey, I was pushed to <br>
+                explore frontend development, balancing new skills like CSS and HTML while strengthening <br>
+                my backend expertise. <br>
+                 <br>
+                One of my most significant experiences was developing a Progressive Web App (PWA) for a <br>
+                gym management system. This project taught me how to combine practicality with user <br>
+                experience effectively. <br>
+                 <br>
+                Currently, I’m diving into hosting and deploying websites, aiming to create seamless <br>
+                platforms. My skills include PHP, CSS, HTML, SQL, and I’m working to enhance my proficiency <br>
+                in JavaScript. This portfolio marks the start of my journey to refine my craft and build <br>
+                remarkable projects. <br></p>
+        </div>
+    </div>
+    <a href="about.html" id="back-to_top"><i class="fa-solid fa-arrow-up"></i></a>
+    <div class="my-projects">
+        <h1>My Projects</h1>
+    </div>
+
+    <!-- ---------------------------JAVA PROJECT--------------------------------- -->
+    <div class="java-project">
+        <h2>Java Application Project</h2>
+        <div class="slider">
+            <button class="prev" onclick="prevJavaSlide()">&#10094;</button>
+            <div class="slider-images">
+                <img src="../images/java-2.jpg" alt="image 1">
+                <img src="../images/java-3.jpg" alt="image 2">
+                <img src="../images/java-1.jpg" alt="image 3">
+            </div>
+            <button class="next" onclick="nextJavaSlide()">&#10095;</button>
+        </div>
+        <div class="java-code">
+            <p>"Source Code"</p>
+            <a href="https://github.com/JeanBackEndOnly/JavaProject.git"><img src="../images/guthib.png" alt=""></a>
+        </div>
+    </div>
+
+    <!-- ---------------------------PHP PROJECT--------------------------------- -->
+    <div class="php-project">
+        <h2>PHP Progressive Web Application Project</h2>
+        <div class="slider-php">
+            <button class="prev" onclick="prevPhpSlide()">&#10094;</button>
+            <div class="slider-images-php">
+                <img src="../images/php1.jpg" alt="image 1">
+                <img src="../images/php2.jpg" alt="image 2">
+                <img src="../images/php3.jpg" alt="image 3">
+                <img src="../images/php4.jpg" alt="image 4">
+                <img src="../images/php5.jpg" alt="image 5">
+                <img src="../images/php6.jpg" alt="image 6">
+                <img src="../images/php7.jpg" alt="image 7">
+                <img src="../images/php8.jpg" alt="image 8">
+                <img src="../images/php9.jpg" alt="image 9">
+                <img src="../images/php10.jpg" alt="image 10">
+                <img src="../images/php11.jpg" alt="image 11">
+                <img src="../images/php1.jpg" alt="image 12">
+            </div>
+            <button class="next" onclick="nextPhpSlide()">&#10095;</button>
+        </div>
+        <div class="java-code">
+            <p>"Source Code"</p>
+            <a href="https://drive.google.com/drive/folders/1zi_nlhQHwcPiW-_m5UnrGsufkp-P_hNS?usp=sharing"><img src="../images/Gdrive.png" alt=""></a>
+        </div>
+    </div>
+    <div class="footer">
+        <p>copyright jean</p>
+    </div>
+    
+    <script>
+        // Java Slider Logic
+        let currentIndexJava = 0;
+
+        function showJavaSlide(index) {
+            const sliderJava = document.querySelector('.slider-images');
+            const slidesJava = document.querySelectorAll('.slider-images img');
+            const totalSlidesJava = slidesJava.length;
+
+            if (index >= totalSlidesJava) {
+                currentIndexJava = 0;
+            } else if (index < 0) {
+                currentIndexJava = totalSlidesJava - 1;
+            } else {
+                currentIndexJava = index;
+            }
+
+            const offset = -currentIndexJava * 100;
+            sliderJava.style.transform = `translateX(${offset}%)`;
+        }
+
+        function nextJavaSlide() {
+            showJavaSlide(currentIndexJava + 1);
+        }
+
+        function prevJavaSlide() {
+            showJavaSlide(currentIndexJava - 1);
+        }
+
+        // Initialize Java Slider
+        showJavaSlide(currentIndexJava);
+
+        // PHP Slider Logic
+        let currentIndexPHP = 0;
+
+        function showPhpSlide(index) {
+            const sliderPhp = document.querySelector('.slider-images-php');
+            const slidesPhp = document.querySelectorAll('.slider-images-php img');
+            const totalSlidesPhp = slidesPhp.length;
+
+            if (index >= totalSlidesPhp) {
+                currentIndexPHP = 0;
+            } else if (index < 0) {
+                currentIndexPHP = totalSlidesPhp - 1;
+            } else {
+                currentIndexPHP = index;
+            }
+
+            const offset = -currentIndexPHP * 100;
+            sliderPhp.style.transform = `translateX(${offset}%)`;
+        }
+
+        function nextPhpSlide() {
+            showPhpSlide(currentIndexPHP + 1);
+        }
+
+        function prevPhpSlide() {
+            showPhpSlide(currentIndexPHP - 1);
+        }
+
+        // Initialize PHP Slider
+        showPhpSlide(currentIndexPHP);
+
+    </script>
+</body>
+</html>

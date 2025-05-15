@@ -1,0 +1,203 @@
+body{
+    background-color: #021526;
+    height: 100vh;
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    width: 100vw;
+    overflow-y: hidden;
+}
+.header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 10%;
+    background-color: #6EACDA;
+}
+.logo{
+    margin: 0;
+    width: 60%;
+    height: 100%;
+    font-size: 1rem;
+    transform: translateX(5rem);
+    color: #03346E;
+}
+.logo h1{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 100%;
+    font-weight: 900;
+}
+.navs{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+}
+.ul-class{
+    z-index: 1;
+    padding: 0;
+    display: flex;
+    width: 70%;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    list-style-type: none;
+}
+.ul-class li{
+    text-align: center;
+}
+.ul-class li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 17px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+.ul-class li a:hover{
+    color: #f0f0f0;
+    border-bottom: solid 2px #03346E;
+    font-weight: 500;
+}
+#services{
+    color: #f0f0f0;
+    border-bottom: solid 2px #03346E;
+}
+
+/* ------------------------Content------------------------- */
+
+.three-content{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.three-content img{
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin: 0;
+}
+
+.data-analyst, .web-development, .computer-maintenance{
+    width: 25%;
+    height: 55%;
+    padding-left: 2%;
+    padding-top: 2%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #021526;
+    border: solid 2px #6EACDA;
+    cursor: pointer;
+    transition: .5s;
+    overflow-y: scroll;
+    padding-bottom: 1rem;
+}
+.data-analyst::-webkit-scrollbar, .web-development::-webkit-scrollbar, .computer-maintenance::-webkit-scrollbar{
+    display: none;
+}
+#data-analyst, #web-development, #computer-maintenance{
+    width: 20px;
+    height: auto;
+    margin-right: .2rem;
+}
+
+.data-analyst h2, .web-development h2, .computer-maintenance h2{
+    margin: 0;
+}
+
+.data-analyst p, .web-development p, .computer-maintenance p{
+    margin-left: -2%;
+    width: 98%;
+    text-align: left;
+    padding: 2px;
+}
+
+.data-analyst a, .web-development a, .computer-maintenance a{
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    transition: .5s;
+}
+
+.data-analyst a:hover, .web-development a:hover, .computer-maintenance a:hover{
+    color: #000;
+}
+
+.data-analyst:hover, .web-development:hover, .computer-maintenance:hover{
+    background-color: #6EACDA;
+    color: #000;
+    box-shadow: 10px 20px 15px 0 #03346E;
+    transform: translate(-.5rem, -.5rem);
+}
+
+/* ------------------------Footer------------------------- */
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #032a4d;
+}
+
+@media (max-width: 570px){
+    body{
+        height: 110vh;
+        overflow-y: scroll;
+    }
+    .header{
+        height: 5%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+    .logo{
+        position: fixed;
+        left: -4.5rem;
+        top: 0;
+        height: 5%;
+    }
+    .ul-class{
+        width: 60%;
+    }
+    .ul-class li a{
+        font-size: 12px;
+    }
+    .logo h1{
+        font-size: 20px;
+    }
+    .navs{
+        display: flex;
+        align-items: end;
+        justify-content: end;
+    }
+    .three-content{
+        flex-direction: column;
+        width: 100%;
+    }
+    .data-analyst, .web-development, .computer-maintenance{
+        width: 80%;
+        margin-top: 10%;
+        height: 33.3%;
+        overflow-y: scroll;
+        padding: 20px;
+    }
+    .data-analyst{
+        margin-top: 13%;
+    }
+    
+}

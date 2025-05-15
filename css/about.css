@@ -1,0 +1,342 @@
+body{
+    background-color: #021526;
+    height: 100vh;
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    width: 100vw;
+    overflow-y: scroll;
+}
+.header{
+    position: fixed;
+    z-index: 4;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 10%;
+    background-color: #6EACDA;
+}
+.logo{
+    margin: 0;
+    width: 60%;
+    height: 100%;
+    font-size: 1rem;
+    transform: translateX(5rem);
+    color: #03346E;
+}
+.logo h1{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 100%;
+    font-weight: 900;
+}
+.navs{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+}
+.ul-class{
+    z-index: 1;
+    padding: 0;
+    display: flex;
+    width: 70%;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    list-style-type: none;
+}
+.ul-class li{
+    text-align: center;
+}
+.ul-class li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 17px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+.ul-class li a:hover{
+    color: #f0f0f0;
+    border-bottom: solid 2px #03346E;
+    font-weight: 500;
+}
+#about{
+    color: #f0f0f0;
+    border-bottom: solid 2px #03346E;
+}
+/* ------------------------Content------------------------- */
+
+.content{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.profile{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.about-me{
+    z-index: 0;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.profile img{
+    width:25rem;
+    height: 60%;
+    border-radius: 50px;
+    border: solid 5px #6EACDA;
+}
+#title, #sub, #prgp{
+    margin: 0 5%;
+}
+#title{
+    padding: 5px 30px;
+    font-size: 40px;
+    border-bottom: solid 2px #6EACDA;
+    border-top: solid 2px #6EACDA;
+}
+#sub{
+    margin-bottom: 10px;
+    color: #6EACDA;
+}
+
+#back-to_top{
+    position: fixed;
+    right: 2rem;
+    bottom: 4rem;
+}
+
+#arrow-img{
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+#arrow-img:hover{
+    transform: scale(1.2);
+}
+
+/* ------------------------My Java Projects------------------------- */
+
+.my-projects{
+    width: 100%;
+    text-align: center;
+}
+
+.java-project{
+    width: 100%;
+    height: 110%;
+    display: block;
+    text-align: center;
+    align-content: start;
+    background-color: #83B4FF;
+}
+
+.slider {
+    position: relative;
+    width: 40%;
+    margin: auto;
+    overflow: hidden;
+    border: 5px solid #6EACDA;
+    border-radius: 15px;
+}
+
+.slider-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.slider-images img {
+    width: 100%;
+    height: 25rem;
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    z-index: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 2;
+}
+
+button.prev {
+    left: 0;
+}
+
+button.next {
+    right: 0;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.java-code{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 7rem;
+    color: #fff;
+    border-radius: 20px;
+}
+.java-code p{
+    margin: 5px 0;
+    font-weight: 900;
+}
+
+.java-code img{
+    width: 50px;
+    height: auto;
+    transition: 0.5s;
+}
+.java-code img:hover{
+    transform: scale(1.2);
+}
+
+/* ------------------------My php Projects------------------------- */
+.php-project{
+    height: 100vh;
+}
+.php-project h2{
+    text-align: center;
+}
+.slider-images-php {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.slider-images-php img {
+    width: 100%;
+    height: 25rem;
+    padding: 0;
+    margin: 0;
+}
+
+.slider-php {
+    position: relative;
+    width: 40%;
+    margin: auto;
+    overflow: hidden;
+    border: 5px solid #6EACDA;
+    border-radius: 15px;
+}
+
+/* ------------------------Footer------------------------- */
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #032a4d;
+}
+
+i{
+    color: #fff;
+    font-size: 30px;
+    transition: .5s;
+}
+i:hover{
+    color: rgb(0, 136, 255);
+}
+
+@media (max-width: 570px){
+    .header{
+        height: 5%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+    .logo{
+        position: fixed;
+        left: -4.5rem;
+        top: 0;
+        height: 5%;
+    }
+    .ul-class{
+        width: 60%;
+    }
+    .ul-class li a{
+        font-size: 12px;
+    }
+    .logo h1{
+        font-size: 20px;
+    }
+    .navs{
+        display: flex;
+        align-items: end;
+        justify-content: end;
+    }
+    .content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .profile {
+        width: 100%;
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .profile img{
+        width: 12rem;
+        height: 60%;
+        transform: translateY(5%);
+    }
+    .about-me {
+        z-index: 0;
+        width: 100%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #title{
+        font-size: 20px;
+    }
+    #sub{
+        font-size: 20px;
+        margin: 0;
+        text-align: center;
+    }
+    #prgp{
+        font-size: 12px;
+        margin: 0;
+        text-align: left;
+        padding: 10px;
+    }
+    .slider, .slider-php{
+        width: 90%;
+        height: fit-content;
+    }
+}
